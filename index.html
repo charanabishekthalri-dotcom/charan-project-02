@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VESTRA — Wear the Edit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Top ticker -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>FREE SHIPPING OVER ₹1499</span>
+    <span>NEW DROP — MONSOON EDIT</span>
+    <span>EASY 7-DAY RETURNS</span>
+    <span>FREE SHIPPING OVER ₹1499</span>
+    <span>NEW DROP — MONSOON EDIT</span>
+    <span>EASY 7-DAY RETURNS</span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a href="#" class="logo">VESTRA</a>
+
+    <nav class="main-nav">
+      <a href="#shop" class="active">New In</a>
+      <a href="#shop">Women</a>
+      <a href="#shop">Men</a>
+      <a href="#shop">Footwear</a>
+      <a href="#shop">Accessories</a>
+      <a href="#shop">Sale</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="search-box">
+        <input type="text" placeholder="Search for kurtas, dresses, shoes...">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+      </div>
+      <button class="icon-btn" aria-label="Wishlist">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6c-1.9-1.6-4.7-1.4-6.5.4L12 7.3l-2.3-2.3c-1.8-1.8-4.6-2-6.5-.4-2.1 1.8-2.2 5-.3 6.9L12 20l9.1-8.5c1.9-1.9 1.8-5.1-.3-6.9z"/></svg>
+      </button>
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h2l.4 2M7 13h10l3-8H5.4M7 13L5.4 5M7 13l-1.2 5h12.4M9 21a1 1 0 100-2 1 1 0 000 2zM18 21a1 1 0 100-2 1 1 0 000 2z"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Cart Drawer -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-head">
+    <h3>Your Bag</h3>
+    <button class="icon-btn" id="closeCart">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p class="empty-msg">Your bag is empty. Time to fix that.</p>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Subtotal</span>
+      <span id="cartTotal">₹0</span>
+    </div>
+    <button class="btn-primary full">Checkout</button>
+  </div>
+</aside>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">Monsoon Edit / 02</p>
+    <h1>Dress for the<br>weather you<br><em>actually</em> want.</h1>
+    <p class="hero-sub">Resort separates, rain-ready outerwear and footwear that doesn't flinch at a puddle. 240 new styles, in store now.</p>
+    <a href="#shop" class="btn-primary">Shop the Edit</a>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-card card-a">
+      <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd47?q=80&w=800&auto=format&fit=crop" alt="Model in beige co-ord set">
+    </div>
+    <div class="hero-card card-b">
+      <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?q=80&w=800&auto=format&fit=crop" alt="Yellow raincoat detail">
+    </div>
+    <div class="hero-tag">
+      <span class="tag-num">240+</span>
+      <span class="tag-label">New styles<br>this week</span>
+    </div>
+  </div>
+</section>
+
+<!-- Category strip -->
+<section class="cat-strip">
+  <a href="#shop" class="cat-card">
+    <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=600&auto=format&fit=crop" alt="Women's fashion">
+    <span>Women</span>
+  </a>
+  <a href="#shop" class="cat-card">
+    <img src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?q=80&w=600&auto=format&fit=crop" alt="Men's fashion">
+    <span>Men</span>
+  </a>
+  <a href="#shop" class="cat-card">
+    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=600&auto=format&fit=crop" alt="Footwear">
+    <span>Footwear</span>
+  </a>
+  <a href="#shop" class="cat-card">
+    <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?q=80&w=600&auto=format&fit=crop" alt="Accessories">
+    <span>Accessories</span>
+  </a>
+</section>
+
+<!-- Shop / Products -->
+<section class="shop" id="shop">
+  <div class="shop-head">
+    <div>
+      <p class="eyebrow">Full Catalogue / 96 styles</p>
+      <h2>New In This Week</h2>
+    </div>
+    <div class="filters">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="women">Women</button>
+      <button class="chip" data-filter="men">Men</button>
+      <button class="chip" data-filter="footwear">Footwear</button>
+      <button class="chip" data-filter="accessories">Accessories</button>
+    </div>
+  </div>
+
+  <div class="product-grid" id="productGrid"></div>
+</section>
+
+<!-- Newsletter / Banner -->
+<section class="promo-band">
+  <div class="promo-text">
+    <h2>Get 10% off<br>your first order</h2>
+    <p>Sign up to the VESTRA list for early access to drops, restocks and members-only sales.</p>
+  </div>
+  <form class="promo-form" id="promoForm">
+    <input type="email" placeholder="you@example.com" required>
+    <button type="submit" class="btn-primary">Notify Me</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#" class="logo">VESTRA</a>
+      <p>Considered clothing for unpredictable days. Designed in Hyderabad, worn everywhere.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="#shop">New In</a>
+      <a href="#shop">Women</a>
+      <a href="#shop">Men</a>
+      <a href="#shop">Footwear</a>
+      <a href="#shop">Sale</a>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <a href="#">Track Order</a>
+      <a href="#">Returns & Exchanges</a>
+      <a href="#">Shipping Info</a>
+      <a href="#">Size Guide</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Sustainability</a>
+      <a href="#">Press</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 VESTRA. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">Pinterest</a>
+      <a href="#">TikTok</a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
